@@ -1,9 +1,8 @@
 import React from 'react'
-import {useDispatch, useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 export default function Sidebar() {
   const elementValue = useSelector(state => state);
-const dispatch = useDispatch();
   return (
     <div class="sidebar">
       <h2>SIDEBAR</h2>
