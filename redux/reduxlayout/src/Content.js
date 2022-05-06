@@ -1,11 +1,10 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import {connect,useDispatch, useSelector} from 'react-redux'
 import {addTask} from './actions'
-import {useDispatch, useSelector} from 'react-redux';
-function Content({appState,addNewTask}) {
+
+function Content({addNewTask}) {
 
   const elementValue = useSelector(state => state);
-  const dispatch = useDispatch();
   function handleAddTask(){
     const task=document.querySelector('.task').value;
     addNewTask(task);
