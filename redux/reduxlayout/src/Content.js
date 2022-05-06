@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect,useDispatch, useSelector} from 'react-redux'
+import {connect, useSelector} from 'react-redux'
 import {addTask} from './actions'
 
 function Content({addNewTask}) {
